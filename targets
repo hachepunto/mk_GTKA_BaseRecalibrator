@@ -4,6 +4,4 @@ find -L data/ \
 	-name "*.bam" \
 | sed \
 	-e 's#data/#results/baseRecalibrator/#g' \
-	-e 's#.sorted##g' \
-	-e 's#.marked_duplicates##g' \
 	-e 's#\.bam$#.recal_data.bam#g'
