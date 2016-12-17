@@ -10,6 +10,8 @@ baserecalibrator:VE:	$BASERECALIBRATOR
 		-T BaseRecalibrator \
 		-R $REFERENCEFASTA \
 		-I $prereq \
+		-L 20 \
 		-knownSites $DBSNP \
+		-knownSites $GOLDINDELS \
 		-o $target".build" \
 	&& mv $target".build" $target
