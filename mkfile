@@ -21,8 +21,8 @@ baserecalibrator:VE:	$BASERECALIBRATOR
 	java -jar $GTKA \
 		-T PrintReads \
 		-R $REFERENCEFASTA \
-		-I $stemdata/%.bam \
-		-BQSR $stemresults/baseRecalibrator/%.recal_data.table \
+		-I data/$stem.bam \
+		-BQSR results/baseRecalibrator/$stem.recal_data.table \
 		-o $target".build" \
 	&& mv $target".build" $target
 
