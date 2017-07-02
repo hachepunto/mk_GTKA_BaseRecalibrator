@@ -1,4 +1,4 @@
-<GTKA_BaseRecalibrator.mk
+<config.mk
 
 BASERECALIBRATOR=`{./targets}
 
